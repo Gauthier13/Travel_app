@@ -1,7 +1,6 @@
 import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 const Footer = () => {
   return (
@@ -11,7 +10,7 @@ const Footer = () => {
           <Link href="/" className="mb-10">
             <Image src="hilink-logo.svg" alt="logo" width={74} height={29} />
           </Link>
-          {/* Ici le map va "itérer" à traver un tableau déclarer dans index.ts pour afficher les différents liens */}
+          {/* Ici le map va "itérer" à traver un tableau déclaré dans index.ts pour afficher les différents liens sous forme de colonnes dans le footer */}
           <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
             {FOOTER_LINKS.map((columns) => (
               <FooterColumn title={columns.title}>

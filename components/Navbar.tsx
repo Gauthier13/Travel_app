@@ -13,7 +13,8 @@ const Navbar = () => {
             </Link>
 
             <ul className="hidden h-full gap-12 lg:flex">
-                {/* 
+                
+            {/* 
             Le map permet d'afficher les liens de la navbar en faisant référence au fichier index.ts importer au-dessus (@/constants). 
             
             Le paramètre "link" du map va "itérer" à travers le tableau NAV_LINKS (déclarer dans index.ts)

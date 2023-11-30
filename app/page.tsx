@@ -5,6 +5,7 @@ import Guide from "@/components/Guide";
 import Hero from "@/components/Hero";
 
 export default function Home() {
+  {/* ICI ON AJOUTER LES SECTIONS DE LA HOME PAGE */}
   return (
     <>
       <Hero />

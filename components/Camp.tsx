@@ -1,7 +1,7 @@
 import { PEOPLE_URL } from "@/constants";
 import Image from "next/image";
 
-// DÉCLARATION D'UN SITE DE BIVOUAC
+// DÉCLARATION DES VARIABLES D'UN SITE DE BIVOUAC
 interface CampProps {
   backgroundImage: string;
   title: string;
@@ -9,6 +9,8 @@ interface CampProps {
   peopleJoined: string;
 }
 
+// STRUCTURE HTML DU COMPOSANT CampSite, CELUI-CI POURRA ÊTRE INJECTÉ DANS LA PAGE ENSUITE
+// CampSite UTILISE LES VARIABLES DE L'OBJECT CampProps DÉCLARÉ CI-DESSUS POUR ÊTRE MODIFIÉ DYNAMIQUEMENT
 const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps) => {
   return (
     <div className={`h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}>

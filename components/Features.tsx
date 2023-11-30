@@ -2,6 +2,7 @@ import { FEATURES } from '@/constants'
 import Image from 'next/image'
 import React from 'react'
 
+// COMPOSANT FEATURES
 const Features = () => {
   return (
     <section className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24">
@@ -28,7 +29,7 @@ const Features = () => {
             />
             <h2 className="bold-40 lg:bold-64">Our Features</h2>
           </div>
-          {/* Le map permet d'afficher "dynamiquement" les description, titre, et icone des features de l'app */}
+          {/* Le map permet d'afficher "dynamiquement" les descriptions, titres, et icones des features de l'app */}
           <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:mg-20 lg:gap-20">
             {FEATURES.map((feature) => (
               <FeatureItem 
@@ -45,12 +46,14 @@ const Features = () => {
   )
 }
 
+// UNE FEATURE EST DÉCLARÉE DE LA MANIÈRE SUIVANTE
 type FeatureItem = {
   title: string;
   icon: string;
   description: string;
 }
 
+// 
 const FeatureItem = ({ title, icon, description }: FeatureItem) => {
   return (
     <li className="flex w-full flex-1 flex-col items-start">

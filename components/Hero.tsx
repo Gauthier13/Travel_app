@@ -8,7 +8,7 @@ const Hero = () => {
       {/* MAP ARRIÈRE PLAN */}
       <div className='hero-map' />
 
-      {/* REDIMENSION MAP PETIT ÉCRAN */}
+      {/* REDIMENSION MAP SUR PETIT ÉCRAN */}
       <div className='relative z-20 flex flex-1 flex-col xl:w-1/2'>
         <Image
           src="/camp.svg"
@@ -23,8 +23,8 @@ const Hero = () => {
         </p>
 
         {/* AFFICHER LES ÉTOILES 
-              Le fill permet de remplir un tableau de 5 éléments (on peut changer le nom d'étoiles ici). Le map permet de remplir le tableau avec une balise Image qui pointe vers l'image d'une étoile. Le processus est répété 5 fois.
-          */}
+              Le fill permet de remplir un tableau de 5 éléments (on peut changer le nombre d'étoile ici Array(x)). Le map permet de remplir le tableau avec une balise Image qui pointe vers l'image d'une étoile. Le processus est répété 5 fois.
+        */}
         <div className='my-11 flex flex-wrap gap-5'>
           <div className='flex items-center gap-2'>
             {Array(5).fill(1).map((_, index) => (

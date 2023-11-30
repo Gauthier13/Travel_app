@@ -8,7 +8,7 @@ type ButtonProps = {
     full?: boolean;
 }
 
-// le bouton est un composant réutilisé plusieurs fois avec des styles différents. De cette façon on l'a déclaré avec un paramètre "variant" que l'on pourra changer selon le style souhaité. Chaque style est définit dans le fichier global.css et plus particulièrement le layer Utilities.
+// le bouton est un composant réutilisé plusieurs fois avec des styles différents. De cette façon on l'a déclaré avec les paramètres "variant" et"full" que l'on pourra changer selon le style souhaité. Chaque style est définit dans le fichier global.css et plus particulièrement dans le layer Utilities.
 const Button = ({type, title, icon, variant, full}: ButtonProps) => {
   return (
     <button

@@ -14,6 +14,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  {/* STRUCTURE DU SITE */}
   return (
     <html lang="en">
       <body> 
